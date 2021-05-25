@@ -2,9 +2,6 @@ import React from 'react';
 import CardItem from './CardItem';
 import Card from '../../shared/components/UIElements/Card';
 import Button from '../../shared/components/FormElements/Button';
-
-
-
 import './CardList.css';
 
 const CardList = props =>{  
@@ -20,6 +17,7 @@ const CardList = props =>{
                     id={data.id}
                     content={data.content}
                     creatorId={data.creator}
+                    reports={data.reports}
                     creatorName={data.creator.name || timestamp}
                     onDelete={props.onDeleteCard}
 

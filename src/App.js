@@ -20,7 +20,7 @@ import MainNavigation from './shared/components/Navigation/MainNavigation';
 import { AuthContext } from './shared/context/auth-context';
 import {useAuth} from './shared/hooks/auth-hook';
 import LoadingSpinner from './shared/components/UIElements/LoadingSpinner';
-
+import Footer from './shared/components/UIElements/Footer';
 const UserCards = React.lazy(()=> import('./cards/pages/UserCards'));
 const NewCard = React.lazy(()=> import('./cards/pages/NewCard'));
 const UpdateCard = React.lazy(()=> import('./cards/pages/UpdateCard'));
@@ -81,6 +81,7 @@ function App() {
 
   <main><Suspense fallback={<div className="center"><LoadingSpinner /></div>}>{routes}</Suspense></main>
   </Router>
+  <Footer />
     </div>
     </AuthContext.Provider>
   );

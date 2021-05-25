@@ -16,7 +16,7 @@ const GameCards = props =>{
           </div>
           <div className="game-card__footer">
           <div className="game-card__footer_left">@{data.creator.name}</div>
-              <div className="game-card__footer_right"><img src={flag} alt="flag" width="15px" /></div>
+              <div onClick={props.onReport} className="game-card__footer_right"><img src={flag} alt="flag" width="15px" /></div>
           </div>        
                
             </Card>
@@ -29,7 +29,7 @@ const GameCards = props =>{
     
 
             <div className="card-container">
-       {props.items.sort(() => { return 0.5 - Math.random() }).map(createCards)}
+       {props.items.sort(() => { return 0.5 - Math.random() }).slice(0,50).map(createCards)}
         </div>)
     
     

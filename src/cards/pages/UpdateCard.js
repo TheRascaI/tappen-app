@@ -84,7 +84,7 @@ const UpdateCard = () => {
         <React.Fragment>
             <ErrorModal error={error} onClear={clearError} />
             {isLoading && <LoadingSpinner asOverlay />}
-            <div className="card-form-container">
+            <div className="card-form-container center">
             <Card>
                 <form className="card-form" onSubmit={cardUpdateSubmitHandler}>
                 <Input 
@@ -98,6 +98,7 @@ const UpdateCard = () => {
                     initialValue={loadedCard.content}
                     initialValid={true}
                 />
+                
                 <Button type="submit" disabled={!formState.isValid}>
                     UPDATE CARD
                 </Button>

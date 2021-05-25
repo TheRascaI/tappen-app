@@ -8,8 +8,9 @@ import Button from "../../shared/components/FormElements/Button";
 import { useHttpClient } from "../../shared/hooks/http-hook";
 
 
+
 const Game = () => {
-    const [loadedCards, setLoadedCards] = useState();
+const [loadedCards, setLoadedCards] = useState();
   const {isLoading, error, sendRequest, clearError} = useHttpClient();
 
   
@@ -28,6 +29,9 @@ const Game = () => {
     fetchCards();
   }, [sendRequest]);
 
+  const handleReport=()=>{
+    console.log("reported!");
+  }
 
   return (
     <React.Fragment>
@@ -43,7 +47,7 @@ const Game = () => {
         <Button danger to="/"><img src={rewind} width="12px" alt="restart"/> Restart</Button>
         </div> 
      
-      {!isLoading && loadedCards && <GameCards items={loadedCards} />}
+      {!isLoading && loadedCards && <GameCards items={loadedCards} onReport={handleReport} />}
     </React.Fragment>
   );
 

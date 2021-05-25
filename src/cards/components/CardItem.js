@@ -1,6 +1,9 @@
 import React,{useState, useContext} from 'react';
+import Carousel from "react-grid-carousel";
 import Card from '../../shared/components/UIElements/Card';
 import flag from '../../assets/svg/flag.svg';
+import edit from '../../assets/svg/edit.svg';
+import deleteIcon from '../../assets/svg/delete.svg';
 import './CardItem.css';
 import Button from '../../shared/components/FormElements/Button';
 
@@ -74,9 +77,9 @@ const CardItem = (props) => {
           <div className="card-item__footer_top">@{props.creatorName}</div>
               <div className="card-item__footer_bottom center">
               
-              <Button className="button--small" to={`/cards/${props.id}`}>EDIT</Button>
-              <Button danger onClick={showDeleteWarningHandler}>X</Button>
-              <Button inverse> 0 <img src={flag} alt="flag" width="10px" /></Button>
+              <Button className="button--small" to={`/cards/${props.id}`}><img src={edit} alt="edit" width="14px" /></Button>
+              <Button danger onClick={showDeleteWarningHandler}><img src={deleteIcon} alt="delete" width="14px" /></Button>
+              <Button inverse > {props.reports} <img src={flag} alt="flag" width="10px" /></Button>
               
               </div>
           </div>        
