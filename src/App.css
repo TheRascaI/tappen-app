@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+.logo{
+  margin-top:1.25rem;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,6 +28,9 @@
 
 .App-link {
   color: #61dafb;
+}
+.button--tappen-start{
+  margin-top: 0.5rem;
 }
 
 @keyframes App-logo-spin {
