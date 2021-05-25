@@ -1,5 +1,4 @@
 import React,{useState, useContext} from 'react';
-import Carousel from "react-grid-carousel";
 import Card from '../../shared/components/UIElements/Card';
 import flag from '../../assets/svg/flag.svg';
 import edit from '../../assets/svg/edit.svg';
