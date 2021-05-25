@@ -20,7 +20,7 @@ const Home = () =>{
             <h2>2 Rules!</h2>
             <ul style={{fontFamily:"'Nunito',sans-serif", paddingLeft:"1.2rem"}}>
                 <li>Tell the truth</li>
-                <li>or drink!</li>
+                <li>or take a sip!</li>
             </ul>
             <h2 style={{textAlign: "center",marginTop:"4rem"}}>Swipe to start!</h2> 
          
