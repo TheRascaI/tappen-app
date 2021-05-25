@@ -1,0 +1,29 @@
+
+.game-card__content{
+    position:relative;
+    height:85%;
+}
+.game-card__content p{
+    font-family: 'Playfair', serif;
+    font-size: 1.5em;
+}
+.game-card__footer{
+    height:15%;
+    position:relative;
+    bottom:1rem;
+    
+    display:flex;
+}
+.game-card__footer_left{
+    color:#1d1f2f;
+    margin:auto;
+    width:50%;
+    text-align:left;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+}
+.game-card__footer_right{
+width:50%;
+margin:auto;
+text-align: right;
+}

@@ -1,0 +1,11 @@
+.card-container{
+    width: 90vw;
+    max-width: 260px;
+    height: 350px;
+    margin:auto;
+    
+}
+.home-card{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+
+}

@@ -1,0 +1,24 @@
+.card-item__footer{
+    
+    position:relative;
+    height:30%;   
+    bottom:1rem;
+}
+.card-item__content{
+    position:relative;
+    height:70%;
+    top:0;
+}
+.card-item__content p{
+    font-size: 1.5em;
+    line-height: 145%;
+}
+
+.card-item__footer_top{
+    width:100%;
+    margin:1rem auto;
+}
+.card-item__footer_bottom{
+    width:100%;
+    margin:1rem auto;
+}

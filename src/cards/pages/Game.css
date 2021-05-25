@@ -1,0 +1,17 @@
+.empty-screen{
+    position:absolute;
+    top:30%;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    
+    opacity:0.75;
+}
+.empty-screen p{
+    color: #fff;
+   
+}
+.empty-screen a{
+    text-decoration: none;
+}
