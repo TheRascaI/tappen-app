@@ -42,10 +42,13 @@ const [loadedCards, setLoadedCards] = useState();
           <LoadingSpinner asOverlay/>
         </div>
       )}
-      <div className="empty-screen">
+      {!isLoading &&
+        <div className="empty-screen">
         <p>Game Over {":("}</p>
         <Button danger to="/"><img src={rewind} width="12px" alt="restart"/> Restart</Button>
         </div> 
+
+      }
      
       {!isLoading && loadedCards && <GameCards items={loadedCards} onReport={handleReport} />}
     </React.Fragment>
