@@ -44,7 +44,7 @@ const [loadedCards, setLoadedCards] = useState();
       )}
       {!isLoading &&
         <div className="empty-screen">
-        <p>Game Over {":("}</p>
+        <p>Thats it, all cards swiped :)</p>
         <Button danger to="/"><img src={rewind} width="12px" alt="restart"/> Restart</Button>
         </div> 
 
